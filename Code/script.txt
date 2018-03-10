@@ -1,0 +1,53 @@
+create table EQUIPMENT_INFO (
+	Equipment_ID INT,
+	Equipment_Type VARCHAR(50),
+	Inventory_ID INT,
+	Equip_Total_Quantity_Available INT,
+	Equip_Model_Info VARCHAR(50),
+	Equip_Description VARCHAR(100)
+);
+
+create table INVENTORY_INFO (
+	Inventory_ID INT,
+	Inventory_Name VARCHAR(50),
+	Address INT
+);
+
+create table INVENTORY_TRACK_INFO (
+	Tracking_ID INT,
+	Equipment_ID INT,
+	Employee_ID INT,
+	Quantity_Taken INT,
+	Stock/Issued INT,
+	Issue_Date DATE,
+	Project_ID INT
+);
+
+create table REPAIR_INFO (
+	Repair_ID INT,
+	Status_ID INT,
+	Equipment_ID INT
+);
+
+create table Equipment_Status (
+	Status_ID INT,
+	Defect_Info VARCHAR(50)
+);
+
+create table VEHICLE_TRACKING_INFO (
+	Vehicle_ID INT,
+	Employee_ID INT,
+	Project_ID INT,
+	No_of_Vehicles_Taken INT,
+	Vehicle_Model_Info VARCHAR(50),
+	Vehicle_Description VARCHAR(50)
+);
+
+create table VEHICLE_INFO (
+	Vehicle_ID INT,
+	Vehicle_Type VARCHAR(50),
+	Inventory_ID INT,
+	Vehicle_Total_Quantity INT,
+	Vehicle_Model_Info VARCHAR(50),
+	Vehicle_Description VARCHAR(50)
+);
